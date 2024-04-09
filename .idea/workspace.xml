@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97d93e30-977b-4ee3-9f71-ee560fc3c1f3" name="Changes" comment="service registry">
+      <change beforePath="$PROJECT_DIR$/resilience" beforeDir="false" afterPath="$PROJECT_DIR$/resilience" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resilience/src/main/java/com/example/resilience/circuitbreaker/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/resilience/src/main/java/com/example/resilience/circuitbreaker/dto/ProductDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +162,7 @@
       <workItem from="1712544952999" duration="4791000" />
       <workItem from="1712576397706" duration="1298000" />
       <workItem from="1712577727001" duration="2577000" />
-      <workItem from="1712630819684" duration="8228000" />
+      <workItem from="1712630819684" duration="8537000" />
     </task>
     <task id="LOCAL-00001" summary="service registry">
       <option name="closed" value="true" />
