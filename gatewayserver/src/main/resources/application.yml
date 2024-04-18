@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: "gatewayserver"
+  config:
+    import: "optional:configserver:http://localhost:8071/"
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+#  during the startup connect to keyclaok and download public certificate, able to validate the access token
+#  with private certificate keycloak, issue new access token everytime
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: "http://localhost:7080/realms/master/protocol/openid-connect/certs"
+
+#to allow request to application name in lower case
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    gateway:
+      enabled: true
+
+info:
+  app:
+    name: "gateway server"
+    description: "API gateway server for microservice"
+    version: "1.0"
