@@ -1,3 +1,6 @@
+server:
+  port: 9000
+
 spring:
   application:
     name: "cards"
@@ -21,10 +24,34 @@ spring:
     username: "guest"
     port: 5672
     password: "guest"
+
 management:
-    endpoints:
-      web:
-        exposure:
-          include: "*"
-server:
-  port: 9000
+  info:
+    env:
+      enabled: true
+  endpoint:
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+endpoints:
+  shutdown:
+    enabled: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8070/eureka/
+
+info:
+  app:
+    name: "cards"
+    description: "cards microservice"
+    version: "1.0"

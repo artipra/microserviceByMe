@@ -25,7 +25,6 @@ spring:
     password: "guest"
 
 
-
 # scert key thru which encry/decry the property spring cloud do by itself
 encrypt:
   key: "abndjdiwopwwwwnjjjjjjjj546"

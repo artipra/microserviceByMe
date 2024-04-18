@@ -16,6 +16,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="gateway (1)" target="17" />
+      <module name="gateway (2)" target="17" />
       <module name="loans" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -26,6 +28,8 @@
       <module name="configserver" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="gateway (1)" options="-parameters" />
+      <module name="gateway (2)" options="-parameters" />
       <module name="loans" options="-parameters" />
       <module name="resilience" options="-parameters" />
     </option>
