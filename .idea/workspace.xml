@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97d93e30-977b-4ee3-9f71-ee560fc3c1f3" name="Changes" comment="adds gateway server implementation">
-      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/example/gateway/config/KeycloakRoleConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/example/gateway/config/SecurityConfig.java" afterDir="false" />
+    <list default="true" id="97d93e30-977b-4ee3-9f71-ee560fc3c1f3" name="Changes" comment="adds microservice security implementation">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,40 +40,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Arti/IdeaProjects/microservice_byme/accounts/src/main/java/com/example/accounts/dto&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/Arti/IdeaProjects/microservice_byme/message",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Arti\IdeaProjects\microservice_byme\message\src\main\java\com\example\message\dto" />
       <recent name="C:\Users\Arti\IdeaProjects\microservice_byme\accounts\src\main\java\com\example\accounts\dto" />
       <recent name="C:\Users\Arti\IdeaProjects\microservice_byme\configserver\src\main\resources\config" />
       <recent name="C:\Users\Arti\IdeaProjects\microservice_byme\cards\src\main\resources" />
       <recent name="C:\Users\Arti\IdeaProjects\microservice_byme\cards\src\main\java\com\example\cards" />
-      <recent name="C:\Users\Arti\IdeaProjects\microservice_byme\configserver\src\main\resources\accounts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Arti\IdeaProjects\microservice_byme\configserver\src\main\resources\config" />
@@ -140,6 +140,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MessageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="message" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.message.MessageApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MicroserviceBymeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="microservice_me" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.microservice_me.MicroserviceBymeApplication" />
@@ -183,7 +190,10 @@
       <workItem from="1713244808418" duration="7127000" />
       <workItem from="1713341816504" duration="909000" />
       <workItem from="1713361115681" duration="1419000" />
-      <workItem from="1713421703417" duration="7588000" />
+      <workItem from="1713421703417" duration="9154000" />
+      <workItem from="1713487565107" duration="350000" />
+      <workItem from="1713502035233" duration="901000" />
+      <workItem from="1713578647096" duration="1613000" />
     </task>
     <task id="LOCAL-00001" summary="service registry">
       <option name="closed" value="true" />
@@ -217,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713421920723</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adds microservice security implementation">
+      <option name="closed" value="true" />
+      <created>1713442415891</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713442415891</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +246,7 @@
     <MESSAGE value="till now implement config server" />
     <MESSAGE value="adds config server implementation" />
     <MESSAGE value="adds gateway server implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds gateway server implementation" />
+    <MESSAGE value="adds microservice security implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds microservice security implementation" />
   </component>
 </project>
