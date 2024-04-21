@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97d93e30-977b-4ee3-9f71-ee560fc3c1f3" name="Changes" comment="adds microservice security implementation">
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/AccountMsgDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/functions/AccountsFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/src/main/java/com/example/message/dto/AccountMsgDto.java" afterDir="false" />
+    <list default="true" id="97d93e30-977b-4ee3-9f71-ee560fc3c1f3" name="Changes" comment="adds microservice event driven by using rabbitMQ">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/entity/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/entity/Accounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/IAccountsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/IAccountsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/impl/AccountsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/impl/AccountsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/message/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message/src/main/java/com/example/message/functions/MessageFunctions.java" beforeDir="false" afterPath="$PROJECT_DIR$/message/src/main/java/com/example/message/functions/MessageFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/message/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,6 +198,7 @@
       <workItem from="1713612623168" duration="3411000" />
       <workItem from="1713620380352" duration="3076000" />
       <workItem from="1713637710451" duration="2582000" />
+      <workItem from="1713668691988" duration="302000" />
     </task>
     <task id="LOCAL-00001" summary="service registry">
       <option name="closed" value="true" />
@@ -250,11 +240,30 @@
       <option name="project" value="LOCAL" />
       <updated>1713442415891</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="adds microservice event driven by using rabbitMQ">
+      <option name="closed" value="true" />
+      <created>1713668921864</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713668921864</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="service registry" />
@@ -262,6 +271,7 @@
     <MESSAGE value="adds config server implementation" />
     <MESSAGE value="adds gateway server implementation" />
     <MESSAGE value="adds microservice security implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds microservice security implementation" />
+    <MESSAGE value="adds microservice event driven by using rabbitMQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds microservice event driven by using rabbitMQ" />
   </component>
 </project>
