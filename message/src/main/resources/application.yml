@@ -15,8 +15,13 @@ spring:
         emailsms-in-0:
           destination: send-communication
           group: ${spring.application.name}
-  rabbitmq:
-    host: "localhost"
-    username: "guest"
-    port: 5672
-    password: "guest"
+#  rabbitMq properties
+#  rabbitmq:
+#    host: "localhost"
+#    username: "guest"
+#    port: 5672
+#    password: "guest"
+      kafka:
+        binder:
+          brokers:
+            -localhost:9092

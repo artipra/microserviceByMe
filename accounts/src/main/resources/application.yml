@@ -18,11 +18,12 @@ spring:
     show-sql: true
   config:
     import: "optional:configserver:http://localhost:8071/"
-  rabbitmq:
-    host: "localhost"
-    username: "guest"
-    port: 5672
-    password: "guest"
+#    rabbitMq properties
+#  rabbitmq:
+#    host: "localhost"
+#    username: "guest"
+#    port: 5672
+#    password: "guest"
   cloud:
     function:
       definition: updateCommunication
@@ -34,7 +35,10 @@ spring:
         sendCommunication-out-0:
           destination: send-communication
           group: ${spring.application.name}
-
+      kafka:
+        binder:
+          brokers:
+            -localhost:9092
 management:
   info:
     env:
