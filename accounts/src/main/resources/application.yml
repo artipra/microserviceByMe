@@ -23,7 +23,17 @@ spring:
     username: "guest"
     port: 5672
     password: "guest"
-
+  cloud:
+    function:
+      definition: updateCommunication
+    stream:
+      bindings:
+        updateCommunication-in-0:
+          destination: communication-sent
+          group: ${spring.application.name}
+        sendCommunication-out-0:
+          destination: send-communication
+          group: ${spring.application.name}
 
 management:
   info:
