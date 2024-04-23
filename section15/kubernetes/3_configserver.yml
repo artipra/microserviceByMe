@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+#when deploy application in kubernetes cluster
+kind: Deployment
+#deployment metadata
+metadata:
+#name to deployment, anything
+  name: configserver-deployment
+  labels:
+    app: configserver
+spec:
+#how many instance
+  replicas: 1
+  selector:
+    matchLabels:
+    #apply spec to deployment's app
+      app: configserver
+  template:
+    metadata:
+      labels:
+      #this template apply on same depolyment's app 
+        app: configserver
+        #this specification related to template
+    spec:
+      containers:
+      #container name
+      - name: configserver
+      #by default if domain is not mention then docker
+        image: eazybytes/configserver:s12
+        ports:
+        - containerPort: 8071
+#treat this fiel as two seperate yml file
+---
+apiVersion: v1
+#service to access the container
+kind: Service
+metadata:
+#service name,with this service name only other microservice will communicate with each other
+  name: configserver
+spec:
+  selector:
+  #apply this service to deployment's app
+    app: configserver
+    #tell to kubernetes cluster to expose it to outside world
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+    # outside port
+      port: 8071
+      # always same on which conatiner is running
+      targetPort: 8071
