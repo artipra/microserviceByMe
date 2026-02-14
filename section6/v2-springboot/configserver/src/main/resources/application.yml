@@ -1,0 +1,48 @@
+server:
+  port: 8071
+spring:
+  application:
+    name: "configserver"
+  profiles:
+#    active: native
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: "https://github.com/artipra/eazybytes-configuration.git"
+          default: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
+
+encrypt:
+  key: "4545454354555555555555555"
+#        native:
+#         search-locations: "file:///Users//Arti//IdeaProjects//config"
+#         search-locations: "classpath:/config"
+  rabbitmq:
+    host: "localhost"
+    username: "guest"
+    port: 5672
+    password: "guest"
+
+
+# scert key thru which encry/decry the property spring cloud do by itself
+#encrypt:
+#  key: "abndjdiwopwwwwnjjjjjjjj546"
+#
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
