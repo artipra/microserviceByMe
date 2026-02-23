@@ -16,17 +16,31 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  config:
+    import: "optional:configserver:http://configserver:8071/"
+  profiles:
+    active:
+     - "prod"
+
 management:
   info:
     env:
       enabled: true
-  endpoint:
-    shutdown:
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
       enabled: true
   endpoints:
     web:
       exposure:
         include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      probes:
+        enabled: true
 
 endpoints:
   shutdown:
@@ -38,23 +52,11 @@ info:
     description: "Account microservice"
     version: "1.0"
 
-build:
-  version: "3.0"
-
-accounts:
-  message: "Welcome to EazyBank accounts related local APIs "
-  contactDetails:
-    name: "John Doe - Developer"
-    email: "john@eazybank.com"
-  onCallSupport:
-    - (555) 555-1234
-    - (555) 523-1345
-
 eureka:
   instance:
-    prefer-ip-address: true
+    preferIpAddress: true
   client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: "http://localhost:8070/eureka"
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/

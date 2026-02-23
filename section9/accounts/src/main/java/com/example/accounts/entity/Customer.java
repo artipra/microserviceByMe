@@ -1,24 +1,26 @@
 package com.example.accounts.entity;
 
-import jakarta.persistence.*;
-import lombok.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.validation.constraints.AssertTrue;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
+import org.springframework.boot.autoconfigure.web.WebProperties;
 
 @Entity
-@Getter @Setter @ToString @AllArgsConstructor @NoArgsConstructor
-public class Customer extends  BaseEntity {
+@Getter@Setter@AllArgsConstructor@NoArgsConstructor
+public class Customer extends BaseEntity {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO,generator="native")
-    @GenericGenerator(name = "native",strategy = "native")
-    @Column(name="customer_id")
+    @GeneratedValue(strategy=GenerationType.AUTO, generator="native")
+    @GenericGenerator(name="native", strategy = "native")
     private Long customerId;
-
     private String name;
-
     private String email;
-
-    @Column(name="mobile_number")
     private String mobileNumber;
-
 }

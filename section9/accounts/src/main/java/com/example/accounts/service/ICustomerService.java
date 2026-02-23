@@ -1,8 +1,9 @@
 package com.example.accounts.service;
 
 
-import com.example.accounts.dto.CustomerDetailsDto;
+import com.example.accounts.dtos.CustomerDetailsDto;
 
 public interface ICustomerService {
-    CustomerDetailsDto fetchCustomerDetail(String mobileNumber);
+
+    CustomerDetailsDto fetchCustomerDetails(String mobileNumber);
 }

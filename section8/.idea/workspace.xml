@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="514564e9-dedd-4bb2-aa03-b34eb4328d8f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dtos/AccountDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dtos/CustomerDetailsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dtos/ErrorResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dtos/ResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/mapper/AccountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/IAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/clients/CardFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/clients/LoanFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/controller/LoansController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/dto/LoanDetailsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/dto/LoansContactInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/entity/Loan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/service/impl/LoanServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/section8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/AccountsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/audit/AuditAwareImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/audit/AuditAwareImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/constants/AccountsConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/constants/AccountsConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/controller/AccountsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/AccountMsgDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/AccountsContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dtos/AccountsContactInfoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/AccountsDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/CardsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dtos/CardsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/CustomerDetailsDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dtos/CustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/ErrorResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/LoansDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/dto/LoanDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/ResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/entity/Accounts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/exception/CustomerAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/exception/CustomerAlreadyExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/mapper/AccountsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/mapper/CustomerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/repository/AccountsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/repository/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/IAccountsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/client/LoanFeignClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/impl/AccountsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/LoansApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/LoansApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/audit/AuditAwareImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/audit/AuditAwareImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/constants/LoansConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/constants/LoanConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/controller/LoanController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/dto/ErrorResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/dto/ErrorResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/dto/LoansDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dtos/LoanDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/dto/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/dto/ResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/entity/Loans.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/exception/LoanAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/exception/LoanAlreadyExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/mapper/LoansMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/mapper/LoanMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/repository/LoanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/repository/LoanRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/service/ILoanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/service/ILoanService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/service/impl/LoansServiceImpl.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;artipra&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/artipra/microserviceByMe.git&quot;,
+    &quot;accountId&quot;: &quot;afff7129-d572-44b8-be17-36289777a0d6&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="39mljB8eeZ5AKCBw3139shPbYzf" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AccountsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.CardsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ConfigserverApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.EurekaApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.LoansApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Arti/IdeaProjects/microserviceByMe/section8/loans/src/main/java/com/example/loans&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Arti\IdeaProjects\microserviceByMe\section8\loans\src\main\java\com\example\loans" />
+      <recent name="C:\Users\Arti\IdeaProjects\microserviceByMe\section8\accounts\src\main\java\com\example\accounts" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.accounts.dtos" />
+      <recent name="com.example.accounts.service.clients" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.LoansApplication">
+    <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="accounts" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.accounts.AccountsApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.accounts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="cards" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.cards.CardsApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.cards.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="configserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.configserver.ConfigserverApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.configserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.eureka.EurekaApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.eureka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoansApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="loans" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.loans.LoansApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.loans.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.LoansApplication" />
+        <item itemvalue="Spring Boot.CardsApplication" />
+        <item itemvalue="Spring Boot.AccountsApplication" />
+        <item itemvalue="Spring Boot.EurekaApplication" />
+        <item itemvalue="Spring Boot.ConfigserverApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.138" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="514564e9-dedd-4bb2-aa03-b34eb4328d8f" name="Changes" comment="" />
+      <created>1771309259678</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1771309259678</updated>
+    </task>
+    <servers />
+  </component>
+</project>

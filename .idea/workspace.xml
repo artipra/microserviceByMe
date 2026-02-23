@@ -4,158 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97d93e30-977b-4ee3-9f71-ee560fc3c1f3" name="Changes" comment="adds microservice event driven by using kafka but kafka plugin didn't work so couldn't test">
-      <change afterPath="$PROJECT_DIR$/section2/accounts/src/main/java/com/example/accounts/audit/AuditAwareImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/java/com/example/loans/audit/AuditAwareImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/java/com/example/loans/constants/LoanConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/java/com/example/loans/controller/LoansController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/java/com/example/loans/dto/ErrorResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/java/com/example/loans/dto/LoanDetailsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/java/com/example/loans/dto/LoanDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/java/com/example/loans/dto/ResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/java/com/example/loans/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/java/com/example/loans/entity/Loan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/java/com/example/loans/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/java/com/example/loans/exception/LoanAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/java/com/example/loans/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/java/com/example/loans/mapper/LoanMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/java/com/example/loans/repository/LoanRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/java/com/example/loans/service/ILoanService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/java/com/example/loans/service/impl/LoanServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/section2/loans/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="97d93e30-977b-4ee3-9f71-ee560fc3c1f3" name="Changes" comment="microservice change till externalized configuration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/AccountsApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/audit/AuditAwareImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/constants/AccountsConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/controller/AccountsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/controller/CustomerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/AccountMsgDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/AccountsContactInfoDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/AccountsDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/CardsDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/CustomerDetailsDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/CustomerDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/ErrorResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/dto/ResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/entity/Accounts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/entity/BaseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/entity/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/exception/CustomerAlreadyExistsException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/exception/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/exception/ResourceNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/functions/AccountsFunctions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/mapper/AccountsMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/mapper/CustomerMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/repository/AccountsRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/repository/CustomerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/IAccountsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/ICustomersService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/client/CardsFeignClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/impl/AccountsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/example/accounts/service/impl/CustomersServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/test/java/com/example/accounts/AccountsApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/example/cards/CardsApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/example/cards/audit/AuditAwareImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/example/cards/constants/CardsConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/example/cards/controller/CardsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/example/cards/dto/CardsContactInfoDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/example/cards/dto/CardsDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/example/cards/dto/ErrorResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/example/cards/dto/ResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/example/cards/entity/BaseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/example/cards/entity/Cards.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/example/cards/exception/CardAlreadyExistsException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/example/cards/exception/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/example/cards/exception/ResourceNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/example/cards/mapper/CardsMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/example/cards/repository/CardsRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/example/cards/service/ICardsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/example/cards/service/impl/CardsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/test/java/com/example/cards/CardsApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/example/loans/LoansApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/test/java/com/example/loans/LoansApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/.idea/section2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/commons/AuditAwareImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/constants/AccountConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/controller/AccountController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/dao/AccountRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/dao/CustomerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/dto/AccountDetailDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/dto/AccountDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/dto/CustomerDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/dto/ResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/entity/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/entity/BaseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/entity/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/exception/CustomerAlreadyExistException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/exception/ResourceNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/mapper/AccountMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/mapper/CustomerMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/service/AccountService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section2/account/src/main/java/com/example/account/service/impl/AccountServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/eureka/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/eureka/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/eureka/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/loans/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/loans/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section9/accounts/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section9/accounts/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section9/eureka/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section9/eureka/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section9/eureka/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section9/gatewayserver/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section9/gatewayserver/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section9/loans/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section9/loans/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section9/loans/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/.idea/section8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/AccountsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/audit/AuditAwareImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/audit/AuditAwareImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/constants/AccountsConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/constants/AccountsConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/controller/AccountsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/exception/CustomerAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/exception/CustomerAlreadyExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/mapper/CustomerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/LoansApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/LoansApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/audit/AuditAwareImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/audit/AuditAwareImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/dto/ErrorResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/dto/ErrorResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/dto/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/dto/ResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/exception/LoanAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/exception/LoanAlreadyExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/repository/LoanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/repository/LoanRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/service/ILoanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/service/ILoanService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +119,7 @@
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/Arti/IdeaProjects/microserviceByMe/section2/loans/src/main/java/com/example/loans&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Arti/IdeaProjects/microserviceByMe/section2/loans/src/main/java/com/example/loans&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Arti/IdeaProjects/microserviceByMe&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -533,7 +420,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713711253029</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="microservice change till externalized configuration">
+      <option name="closed" value="true" />
+      <created>1771075148883</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1771075148883</updated>
+    </task>
+    <task id="LOCAL-00010" summary="microservice change till externalized configuration">
+      <option name="closed" value="true" />
+      <created>1771075323250</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1771075323250</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,6 +461,7 @@
     <MESSAGE value="adds microservice security implementation" />
     <MESSAGE value="adds microservice event driven by using rabbitMQ" />
     <MESSAGE value="adds microservice event driven by using kafka but kafka plugin didn't work so couldn't test" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds microservice event driven by using kafka but kafka plugin didn't work so couldn't test" />
+    <MESSAGE value="microservice change till externalized configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="microservice change till externalized configuration" />
   </component>
 </project>
