@@ -4,45 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97d93e30-977b-4ee3-9f71-ee560fc3c1f3" name="Changes" comment="microservice change till externalized configuration">
+    <list default="true" id="97d93e30-977b-4ee3-9f71-ee560fc3c1f3" name="Changes" comment="microservice change till resilience">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/.idea/section8.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/AccountsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/audit/AuditAwareImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/audit/AuditAwareImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/constants/AccountsConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/constants/AccountsConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/controller/AccountsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/exception/CustomerAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/exception/CustomerAlreadyExistsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/mapper/CustomerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/repository/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/service/ICustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/java/com/example/accounts/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/accounts/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/section8/accounts/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/LoansApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/LoansApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/audit/AuditAwareImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/audit/AuditAwareImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/dto/ErrorResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/dto/ErrorResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/dto/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/dto/ResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/exception/LoanAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/exception/LoanAlreadyExistsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/repository/LoanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/repository/LoanRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/service/ILoanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/section8/loans/src/main/java/com/example/loans/service/ILoanService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -436,7 +399,23 @@
       <option name="project" value="LOCAL" />
       <updated>1771075323250</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="microservice change till resilience">
+      <option name="closed" value="true" />
+      <created>1771845521814</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1771845521814</updated>
+    </task>
+    <task id="LOCAL-00012" summary="microservice change till resilience">
+      <option name="closed" value="true" />
+      <created>1771845554665</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1771845554665</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,6 +441,7 @@
     <MESSAGE value="adds microservice event driven by using rabbitMQ" />
     <MESSAGE value="adds microservice event driven by using kafka but kafka plugin didn't work so couldn't test" />
     <MESSAGE value="microservice change till externalized configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="microservice change till externalized configuration" />
+    <MESSAGE value="microservice change till resilience" />
+    <option name="LAST_COMMIT_MESSAGE" value="microservice change till resilience" />
   </component>
 </project>
